@@ -1,4 +1,5 @@
 <?php
+//Muutettu GitHubissa.
 include('../../tunnukset.php');
 define('DB_DATABASE','puutarha');
 define('DB_PASSWORD',$password);
