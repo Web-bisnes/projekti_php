@@ -16,7 +16,7 @@ function register($email, $password) {
   $query = "insert into kayttajat (sahkoposti,salasana) values ('$email','$password_hash')";
   $result = $conn->query($query);
   if (!$result) {
-    throw new Exception('Could not register you in database - please try again later.');
+    throw new Exception("Could not register you in database - $query.");
     }
   return true;
 }
