@@ -1,8 +1,9 @@
 <?php
+include('../../tunnukset.php');
 define('DB_DATABASE','puutarha');
-define('DB_PASSWORD','');
-define('DB_USER','root');
-define('DB_SERVER','localhost');
+define('DB_PASSWORD',$password);
+define('DB_USER',$user);
+define('DB_SERVER',$server);
 
 function db_connect() {
    $result = new mysqli(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
